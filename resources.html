@@ -1,0 +1,256 @@
+
+injury free athletes
+/
+im trying to create a website that is a hub for injury prevention resources. ill have articles links to videos i made and that others made for now ill focus on long distance running but later ill add like sprints and other sports. also i wanna have a page of like community outreach stuff so ive been hosting workshops for foam rolling and stuff i also have an instagram account but its not super active rn btw i already made the github repository but all it has rn is the readme and index.html
+
+1:30 AM
+I'd be happy to help you build out your injury prevention resource hub! This sounds like a valuable project for the running community.
+
+Let me create a complete website structure for you with:
+
+A clean, professional homepage
+A resources section for articles and videos (organized by sport/activity)
+A community outreach page highlighting your workshops
+Responsive design that works on mobile and desktop
+Easy-to-update structure for adding content later
+I'll build this as a multi-page site with a cohesive design that you can easily expand as you add more sports and content. Since you mentioned you have a GitHub repository, I'll create files that you can directly add to it.
+
+Check the frontend-design skill for guidance on creating a high-quality website
+Now I'll create a complete website for your injury prevention hub. I'll go with a clean, athletic aesthetic that balances professionalism with approachability - think modern sports medicine meets community wellness.
+
+
+4 steps
+
+Creating JavaScript file for interactive filtering and smooth animations
+script.js
+
+Creating a comprehensive README with instructions for updating content and using the website
+README.md
+Now let me move all the files to the outputs directory so you can easily add them to your GitHub repository:
+
+
+Copy all website files to outputs directory
+
+
+
+Presented 6 files
+Perfect! I've created a complete injury prevention resource hub website for you. Here's what I built:
+
+📦 What You Got
+3 Pages:
+
+Homepage - Bold hero section with "Stay Strong. Run Far." tagline and feature cards
+Resources - Filterable library for articles and videos (currently set up for long-distance running)
+Community - Showcase of your workshops including foam rolling, mobility, strength training, and injury prevention
+Professional Design:
+
+Athletic orange and navy color scheme
+Bebas Neue display font for headers (bold and energetic)
+Smooth animations and transitions
+Fully responsive (works great on phones, tablets, and desktop)
+Clean, modern layout that avoids generic AI aesthetics
+🚀 Next Steps
+Download all 6 files from above
+Add them to your GitHub repository (replace the existing index.html)
+Update placeholders:
+Replace yourhandle with your actual Instagram handle (in all 3 HTML files)
+Replace contact@injuryfree.com with your real email
+Add your content - The README has detailed instructions for adding articles, videos, and workshops
+The site is ready to go live on GitHub Pages! The sport filter is already set up for when you want to add sprints and other sports later - just follow the instructions in the README.
+
+Index
+Code · HTML 
+Resources
+Code · HTML 
+Community
+Code · HTML 
+Styles
+Code · CSS 
+Script
+JS 
+Readme
+Document · MD 
+
+
+
+
+
+
+
+Claude is AI and can make mistakes. Please double-check responses.
+Resources · HTML
+Copy
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources - InjuryFree</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">INJURYFREE</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resources.html" class="active">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Resources</h1>
+            <p>Your comprehensive library of injury prevention knowledge</p>
+        </div>
+    </section>
+
+    <section class="resources-section">
+        <div class="container">
+            <!-- Sport Filter -->
+            <div class="sport-filter">
+                <h3>Filter by Sport</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-sport="all">All</button>
+                    <button class="filter-btn" data-sport="long-distance">Long Distance Running</button>
+                    <button class="filter-btn" data-sport="sprints">Sprints <span class="coming-soon">Coming Soon</span></button>
+                    <button class="filter-btn" data-sport="other">Other Sports <span class="coming-soon">Coming Soon</span></button>
+                </div>
+            </div>
+
+            <!-- Articles Section -->
+            <div class="resource-category">
+                <div class="category-header">
+                    <h2>Articles</h2>
+                    <p>In-depth guides and evidence-based information</p>
+                </div>
+                
+                <div class="resource-grid" id="articles-grid">
+                    <!-- Example article cards - you can add your actual articles here -->
+                    <article class="resource-card" data-sport="long-distance">
+                        <div class="resource-badge">Article</div>
+                        <h3>Understanding Common Running Injuries</h3>
+                        <p>Learn about the most frequent injuries in distance running and how to recognize early warning signs.</p>
+                        <a href="#" class="resource-link">Read Article →</a>
+                    </article>
+
+                    <article class="resource-card" data-sport="long-distance">
+                        <div class="resource-badge">Article</div>
+                        <h3>The Science of Recovery</h3>
+                        <p>Discover evidence-based recovery techniques that help prevent overuse injuries and improve performance.</p>
+                        <a href="#" class="resource-link">Read Article →</a>
+                    </article>
+
+                    <article class="resource-card" data-sport="long-distance">
+                        <div class="resource-badge">Article</div>
+                        <h3>Building a Balanced Training Plan</h3>
+                        <p>How to structure your weekly training to minimize injury risk while maximizing progress.</p>
+                        <a href="#" class="resource-link">Read Article →</a>
+                    </article>
+
+                    <!-- Placeholder for adding more articles -->
+                    <article class="resource-card add-card">
+                        <div class="add-icon">+</div>
+                        <h3>More Articles Coming Soon</h3>
+                        <p>Check back regularly for new injury prevention content.</p>
+                    </article>
+                </div>
+            </div>
+
+            <!-- Videos Section -->
+            <div class="resource-category">
+                <div class="category-header">
+                    <h2>Video Library</h2>
+                    <p>Visual demonstrations and expert tutorials</p>
+                </div>
+                
+                <div class="resource-grid" id="videos-grid">
+                    <!-- Example video cards - you can add your actual video links here -->
+                    <article class="resource-card video-card" data-sport="long-distance">
+                        <div class="resource-badge video">Video</div>
+                        <div class="video-thumbnail">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Proper Running Form Basics</h3>
+                        <p>Essential techniques for injury-free running.</p>
+                        <a href="#" class="resource-link">Watch Video →</a>
+                    </article>
+
+                    <article class="resource-card video-card" data-sport="long-distance">
+                        <div class="resource-badge video">Video</div>
+                        <div class="video-thumbnail">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Pre-Run Dynamic Warmup</h3>
+                        <p>A complete warmup routine to prepare your body for running.</p>
+                        <a href="#" class="resource-link">Watch Video →</a>
+                    </article>
+
+                    <article class="resource-card video-card" data-sport="long-distance">
+                        <div class="resource-badge video">Video</div>
+                        <div class="video-thumbnail">
+                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                            </svg>
+                        </div>
+                        <h3>Post-Run Static Stretching</h3>
+                        <p>Essential stretches to improve flexibility and prevent tightness.</p>
+                        <a href="#" class="resource-link">Watch Video →</a>
+                    </article>
+
+                    <!-- Placeholder for adding more videos -->
+                    <article class="resource-card add-card">
+                        <div class="add-icon">+</div>
+                        <h3>More Videos Coming Soon</h3>
+                        <p>Subscribe to our channel for the latest content.</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>InjuryFree</h3>
+                    <p>Empowering athletes with the knowledge and tools to prevent injuries and achieve their goals.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="community.html">Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://instagram.com/yourhandle" target="_blank">Instagram</a></li>
+                        <li><a href="mailto:contact@injuryfree.com">Email Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 InjuryFree. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
